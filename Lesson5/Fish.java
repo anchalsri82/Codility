@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 /**
  * You are given two non-empty zero-indexed arrays A and B consisting of N integers. Arrays A and B represent N voracious fish in a river, ordered downstream along the flow of the river.
  * The fish are numbered from 0 to N - 1. If P and Q are two fish and P < Q, then fish P is initially upstream of fish Q. Initially, each fish has a unique position.
@@ -33,7 +35,7 @@
  * expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
  * Elements of input arrays can be modified.
  */
- class Solution {
+ class SolutionFish {
     public int solution(int[] A, int[] B) {
         // write your code in Java SE 8
 	        Stack<Integer> stack = new Stack<Integer>();

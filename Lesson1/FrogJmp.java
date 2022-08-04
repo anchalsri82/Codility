@@ -1,5 +1,6 @@
 /**
- * A small frog wants to get to the other side of the road. The frog is currently located at position X and wants to get to a position greater than or equal to Y.
+ * A small frog wants to get to the other side of the road. The frog is currently located at position 
+ X and wants to get to a position greater than or equal to Y.
  * The small frog always jumps a fixed distance, D.
  * Count the minimal number of jumps that the small frog must perform to reach its target. 
  * Write a function: class Solution { public int solution(int X, int Y, int D); }
@@ -20,21 +21,19 @@
  * expected worst-case space complexity is O(1).
  */
 
-class Solution {
+class SolutionFrogJump {
     public int solution(int X, int Y, int D) {
         // write your code in Java SE 8
-        if (X>=Y){
+        if (X >= Y) {
             return 0;
         }
-        int remainder = (Y-X)%D;//Find the remainder 
-        int step = (Y-remainder-X)/D;//Find the quotient
-        if (remainder>0){
-          return step+1;    
-        }else {
-          return step;    
+        int remainder = (Y - X) % D;//Find the remainder
+        int step = (Y - remainder - X) / D;//Find the quotient
+        if (remainder > 0) {
+            return step + 1;
+        } else {
+            return step;
         }
-        
-        
     }
 }
 

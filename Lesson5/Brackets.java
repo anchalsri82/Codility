@@ -16,10 +16,11 @@
  * expected worst-case space complexity is O(N) (not counting the storage required for input arguments).
  */
 import java.util.Stack;
-class Solution {
+class SolutionBrackets {
     public int solution(String S) {
         Stack<Character> stack = new Stack<Character>();
         for (int i = 0; i < S.length(); i++) {
+            var ch = toString().charAt(i);
             switch (S.charAt(i)) {
                 case '(':
                 case '[':
